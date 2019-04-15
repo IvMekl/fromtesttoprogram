@@ -26,4 +26,14 @@ public class Calculator {
 		return !isEven(number);
 	}
 	
+	public static double pow(double basis, int exponent) {
+		return 0.0;
+	}
+	
+	public static String getString(double number) {
+		return Double.toString(number);
+	}
+	
+	//What is missing?
+	
 }
