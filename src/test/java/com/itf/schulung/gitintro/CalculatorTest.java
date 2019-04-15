@@ -2,11 +2,13 @@ package com.itf.schulung.gitintro;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
 	    @Test
+	    @DisplayName("Tests if multiplication return zero")
 	    public void multiplicationOfZeroIntegersShouldReturnZero() {
 	    	Calculator tester = new Calculator(); // MyClass is tested
 
