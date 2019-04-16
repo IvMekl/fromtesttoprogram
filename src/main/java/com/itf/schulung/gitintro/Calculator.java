@@ -27,7 +27,7 @@ public class Calculator {
 	}
 	
 	public static double pow(double basis, int exponent) {
-		return 0.0;
+		return Math.pow(basis, exponent);
 	}
 	
 	public static String getString(double number) {
