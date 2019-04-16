@@ -13,6 +13,13 @@ public class MusikStueckDB {
 		}
 	}
 	
+	public MusikStueckDB() {
+		musikListe = new ArrayList<MusikStueck>();
+		for(int i = 0; i<100; i++) {
+			musikListe.add(MusikStueckFactory.getMusikstueck());
+		}
+	}
+	
 	public void printMe() {
 		int i = 1;
 		for (MusikStueck x : this.musikListe) {
