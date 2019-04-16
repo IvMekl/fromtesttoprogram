@@ -41,10 +41,10 @@ public class MusikStueck {
 		} else {
 			sekDauer = ""+(dauer%60);
 		}
-		
-		return "Titel: " +titel + "\nDauer: " 
+		String myString = "Titel: " +titel + "\nDauer: " 
 				+ dauer/60 +":"+ sekDauer+ "\nGenre: " 
 				+ genre.getName();
+		return myString;
 	}
 	
 	
