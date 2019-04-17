@@ -43,6 +43,12 @@ public class RationaleZahl {
 
 	@Override
 	public String toString() {
+		if(p>q) {
+			if (p%q==0) {
+				return ""+p/q;
+			}
+			return "" + (p/q) + " " + (p%q) + "/" + q;
+		}
 		return p + "/" + q;
 	}
 	
@@ -50,6 +56,18 @@ public class RationaleZahl {
 		int groesster = TeilerRechner.groessterGemeinsamer(TeilerRechner.getAlleTeiler(this.getP()), TeilerRechner.getAlleTeiler(this.getQ()));
 		this.setP(this.getP()/groesster);
 		this.setQ(this.getQ()/groesster);
+	}
+	
+	public RationaleZahl add(RationaleZahl x) {
+		RationaleZahl result = new RationaleZahl((this.getP()*x.getQ())+(this.getQ()*x.getP()), this.getQ()*x.getQ());
+		System.out.println(this.toString()+ " + " + x.toString() + " = " + result.toString());
+		return result;
+	}
+	
+	public RationaleZahl multiply(RationaleZahl x) {
+		RationaleZahl result = new RationaleZahl(this.getP()*x.getP(), this.getQ()*x.getQ());
+		System.out.println(this.toString() + " x " + x.toString() + " = " + result.toString());
+		return result;
 	}
 	
 	

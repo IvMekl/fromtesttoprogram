@@ -4,9 +4,14 @@ public class App
 {
     public static void main( String[] args )
     {
-       RationaleZahl r = new RationaleZahl(14,16);
-       System.out.println(r);
-       System.out.println("GIT TEST");
+       RationaleZahl x = new RationaleZahl(5,6);
+       RationaleZahl y = new RationaleZahl(1,4);
+       RationaleZahl z = x.add(y);
+       System.out.println(z);
+       
+       RationaleZahl a = new RationaleZahl(1, 4);
+       RationaleZahl b = new RationaleZahl(1, 2);
+       RationaleZahl c = a.multiply(b);
 //       r.kuerze();
 //       System.out.println(r);
     }
